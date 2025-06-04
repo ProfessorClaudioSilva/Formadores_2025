@@ -17,7 +17,8 @@ header{
     border-bottom: 1px solid gray;
 }
 
-.conteiner{
+.container{
+    text-align: justify;
 }
 
 footer{
