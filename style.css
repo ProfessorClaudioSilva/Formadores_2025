@@ -89,7 +89,7 @@ h1, h2 {
     flex-direction: column; /* Organiza o conteúdo em coluna (se houver mais de um item) */
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    min-height: 120px; /* Define uma altura mínima para os retângulos dos links */
+    min-height: 80px; /* Define uma altura mínima para os retângulos dos links */
 }
 
 /* Efeito ao passar o mouse sobre um item de link */
