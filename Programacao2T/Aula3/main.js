@@ -7,7 +7,7 @@ while (usuário === ""){
 let elementoSaudações = document.querySelector("#nome-usuário");
 
 if (usuário === null){
-    elementoSaudações.textContent = "seja muito bem vindo!"
+    elementoSaudações.textContent = "Seja bem vindo!"
 }else{
     elementoSaudações.textContent = usuário;
 }
