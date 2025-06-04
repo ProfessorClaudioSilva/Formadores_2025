@@ -94,7 +94,7 @@ h1, h2 {
 
 /* Efeito ao passar o mouse sobre um item de link */
 .link-item:hover {
-    transform: translateY(-5px); /* Move o item 5px para cima */
+    transform: translateY(-30px); /* Move o item 5px para cima */
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Adiciona uma sombra mais pronunciada */
 }
 
