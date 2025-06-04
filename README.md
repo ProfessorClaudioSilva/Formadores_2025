@@ -23,7 +23,8 @@ Fique à vontade para explorar! Conforme as aulas forem acontecendo e eu for org
 - Aula 8: (Aguarde, os arquivos estão a caminho!)
 
 ## Dicas para Navegar
-Se você está aqui para dar uma olhada ou quer baixar os arquivos para seu próprio estudo. Pode navegar pelo GitHub ormalmente.
+Se você está aqui para dar uma olhada ou quer baixar os arquivos para seu próprio estudo. 
+Pode navegar pelo GitHub normalmente. Pelo link: https://github.com/ProfessorClaudioSilva/Formadores_2025
 
 Se deseja visualizar os resultados, em especial da prgramação HTML
 Navegue pelo link: https://professorclaudiosilva.github.io/Formadores_2025/
