@@ -64,7 +64,7 @@ footer {
 }
 
 /* Estilos para os títulos h1 e h2 */
-h1, h2 {
+h2, h3 {
     color: var(--azul-escuro-medio); /* Define a cor dos títulos usando a variável de azul escuro */
 }
 
