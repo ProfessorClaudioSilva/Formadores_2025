@@ -28,8 +28,8 @@ Navegue pelos links: A forma mais fácil é clicar nos links das aulas que estã
 Baixe tudo: Se quiser ter uma cópia de todos os meus arquivos, pode clonar este repositório para o seu computador:
 Bash
 
-git clone https://github.com/SeuUsuario/SeuRepositorio.git
-(Não esqueça de substituir SeuUsuario e SeuRepositorio pelo seu nome de usuário e o nome que deu ao seu repositório aqui no GitHub.)
+git clone https://github.com/ProfessorClaudioSilva/Formadores_2025
+
 Um Pouco Sobre Mim e o Aprendizado
 Este repositório é uma parte importante da minha jornada para dominar a programação. É onde eu registro meu progresso, reviso conceitos e celebro cada nova conquista. Acredito que a organização é chave para o aprendizado, e este espaço é meu jeito de manter tudo em ordem.
 
