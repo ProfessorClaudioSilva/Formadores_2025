@@ -1,0 +1,132 @@
+/* style.css */
+
+/* Define variáveis CSS para cores, facilitando a alteração global das cores no futuro */
+:root {
+    --azul-escuro-medio: #2C3E50; /* Variável para um tom de azul escuro médio, usado no cabeçalho e rodapé */
+    --cor-texto-contraste: #ECF0F1; /* Variável para uma cor de texto clara, para alto contraste com o azul escuro */
+    --cor-fundo-corpo: #FFFFFF; /* Variável para a cor de fundo do corpo da página (branco) */
+    --cor-texto-corpo: #000000; /* Variável para a cor do texto principal do corpo da página (preto) */
+    --cor-borda-link: #3498DB; /* Variável para a cor da borda dos retângulos de link (um tom de azul) */
+    --cor-fundo-link: #EBF5FB; /* Variável para a cor de fundo dos retângulos de link (um azul mais claro) */
+}
+
+/* Estilos globais para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão do body para que o conteúdo ocupe toda a largura */
+    font-family: Arial, sans-serif; /* Define a família da fonte padrão para todo o texto */
+    display: flex; /* Habilita o Flexbox para layout vertical */
+    flex-direction: column; /* Organiza os itens filhos (cabeçalho, conteúdo, rodapé) em uma coluna */
+    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
+    background-color: var(--cor-fundo-corpo); /* Define a cor de fundo do corpo usando a variável */
+    color: var(--cor-texto-corpo); /* Define a cor do texto padrão do corpo usando a variável */
+}
+
+/* Estilos para o cabeçalho e rodapé, que compartilham algumas propriedades */
+header, footer {
+    background-color: var(--azul-escuro-medio); /* Define a cor de fundo usando a variável de azul escuro */
+    color: var(--cor-texto-contraste); /* Define a cor do texto usando a variável de cor de contraste */
+    padding: 15px 0; /* Adiciona padding interno de 15px acima/abaixo e 0 nas laterais */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho/rodapé */
+    width: 100%; /* Garante que o cabeçalho/rodapé ocupe 100% da largura disponível */
+    position: sticky; /* Torna o elemento "pegajoso", ou seja, fixo quando a rolagem atinge sua posição */
+    z-index: 1000; /* Define a ordem de empilhamento para garantir que fique acima de outros elementos */
+}
+
+/* Estilos específicos para o cabeçalho */
+header {
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adiciona uma sombra suave na parte inferior do cabeçalho */
+}
+
+/* Estilos específicos para o rodapé */
+footer {
+    bottom: 0; /* Fixa o rodapé na parte inferior da página */
+    margin-top: auto; /* Empurra o rodapé para a parte inferior quando o conteúdo é curto */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Adiciona uma sombra suave na parte superior do rodapé */
+}
+
+/* Estilos para o wrapper de conteúdo, que centraliza o conteúdo principal */
+.content-wrapper {
+    flex-grow: 1; /* Permite que este elemento ocupe todo o espaço vertical restante entre o cabeçalho e o rodapé */
+    display: flex; /* Habilita o Flexbox para alinhar o conteúdo interno */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo ao topo verticalmente */
+    padding: 20px; /* Adiciona padding interno ao redor do conteúdo */
+}
+
+/* Estilos para o container principal que limita a largura do conteúdo */
+.container {
+    max-width: 1200px; /* Define a largura máxima do container */
+    width: 100%; /* Garante que o container ocupe 100% da largura disponível até o max-width */
+    padding: 20px; /* Adiciona padding interno */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura total */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Estilos para os títulos h1 e h2 */
+h1, h2 {
+    color: var(--azul-escuro-medio); /* Define a cor dos títulos usando a variável de azul escuro */
+}
+
+/* Estilos para a grade de links */
+.links-grid {
+    display: grid; /* Habilita o CSS Grid para criar um layout de grade */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cria colunas que se ajustam automaticamente, com largura mínima de 280px */
+    gap: 20px; /* Define o espaçamento entre os itens da grade (linhas e colunas) */
+    justify-content: center; /* Centraliza os itens da grade horizontalmente */
+    margin-top: 30px; /* Adiciona margem superior para separar da descrição */
+}
+
+/* Estilos para cada item de link individual (o retângulo) */
+.link-item {
+    background-color: var(--cor-fundo-link); /* Define a cor de fundo usando a variável de azul claro para links */
+    border: 2px solid var(--cor-borda-link); /* Adiciona uma borda sólida de 2px usando a variável de azul para borda */
+    border-radius: 15px; /* Arredonda os cantos do retângulo */
+    padding: 20px; /* Adiciona padding interno */
+    text-align: center; /* Centraliza o texto dentro do item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para efeitos de hover */
+    display: flex; /* Habilita Flexbox para centralizar o conteúdo do link verticalmente */
+    flex-direction: column; /* Organiza o conteúdo em coluna (se houver mais de um item) */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 120px; /* Define uma altura mínima para os retângulos dos links */
+}
+
+/* Efeito ao passar o mouse sobre um item de link */
+.link-item:hover {
+    transform: translateY(-5px); /* Move o item 5px para cima */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Adiciona uma sombra mais pronunciada */
+}
+
+/* Estilos para o link (texto) dentro do item */
+.link-item a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: var(--azul-escuro-medio); /* Define a cor do texto do link usando a variável de azul escuro */
+    font-weight: bold; /* Deixa o texto do link em negrito */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do link */
+    display: block; /* Transforma o link em um bloco, permitindo que ocupe todo o espaço do item */
+    width: 100%; /* Garante que o link ocupe 100% da largura do item */
+    height: 100%; /* Garante que o link ocupe 100% da altura do item */
+    display: flex; /* Habilita Flexbox novamente para centralizar o texto do link */
+    justify-content: center; /* Centraliza o texto do link horizontalmente */
+    align-items: center; /* Centraliza o texto do link verticalmente */
+}
+
+/* --- Responsividade Básica --- */
+/* Media Query para telas médias (tablets) */
+@media (max-width: 768px) {
+    .links-grid {
+        /* Altera para duas colunas, ajustando a largura mínima */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Media Query para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .links-grid {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+    .link-item {
+        padding: 15px; /* Reduz o padding dos itens em telas menores */
+    }
+}
