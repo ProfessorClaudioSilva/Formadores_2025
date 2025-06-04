@@ -1,7 +1,7 @@
 body{
     background-color: darkslategray;
     color: white;
-    text-align: justify;
+    text-align: center;
     font-family: Roboto;
 }
 
@@ -15,6 +15,9 @@ h2, h3{
 
 header{
     border-bottom: 1px solid gray;
+}
+
+.conteiner{
 }
 
 footer{
