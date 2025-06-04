@@ -56,7 +56,7 @@ footer {
 
 /* Estilos para o container principal que limita a largura do conteúdo */
 .container {
-    max-width: 1200px; /* Define a largura máxima do container */
+    max-width: 100px; /* Define a largura máxima do container */
     width: 100%; /* Garante que o container ocupe 100% da largura disponível até o max-width */
     padding: 20px; /* Adiciona padding interno */
     box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura total */
