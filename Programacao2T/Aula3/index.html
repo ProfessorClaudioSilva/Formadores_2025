@@ -51,7 +51,7 @@
                 </ul>
                 <p>Exemplo Básico:</p>
                 
-                <code>
+                <pre><code>
                 /* Este é um comentário em CSS */
                 
                 /* Seletor: P (todos os parágrafos) */
@@ -74,35 +74,37 @@
                     text-align: center; /* Centraliza o texto */
                     margin-top: 20px;   /* Adiciona 20 pixels de margem superior */
                 }
-                </code>
+                </code></pre>
                     
-                Onde o CSS é Escrito?
-                Existem três formas principais de incluir CSS em uma página web:
-                
-                CSS Externo (Recomendado):
-                
-                O CSS é escrito em um arquivo separado (.css) e linkado ao HTML usando a tag <link> no <head>.
-                Vantagem: Organiza o código, facilita a manutenção e o reuso de estilos em múltiplas páginas.
-                Exemplo no HTML: <link rel="stylesheet" href="style.css">
-                CSS Interno:
-                
-                O CSS é escrito dentro da tag <style> no <head> do documento HTML.
-                Vantagem: Útil para estilos específicos de uma única página.
-                Exemplo no HTML:
-                HTML
-                
-                <head>
-                    <style>
-                        body { background-color: lightgray; }
-                    </style>
-                </head>
-                CSS Inline:
-                
-                O CSS é aplicado diretamente a um elemento HTML usando o atributo style.
-                Vantagem: Para estilos muito pontuais e específicos de um único elemento.
-                Desvantagem: Dificulta a manutenção e não é recomendado para estilos complexos ou reutilizáveis.
-                Exemplo no HTML: <p style="color: red; font-weight: bold;">Este texto é vermelho e negrito.</p></p>
-
+                <h3>Onde o CSS é Escrito?</h3>
+                <p>Existem três formas principais de incluir CSS em uma página web:
+                <br><br>
+                <b>CSS Externo (Recomendado):</b>
+                <br><br>
+                O CSS é escrito em um arquivo separado (.css) e linkado ao HTML usando a tag <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code>.<br>
+                <b>Vantagem:</b> Organiza o código, facilita a manutenção e o reuso de estilos em múltiplas páginas.<br>
+                <b>Exemplo no HTML:</b> <pre><code><link rel="stylesheet" href="style.css"></code></pre>
+                <br><br>
+                <b>CSS Interno:</b>
+                <br><br>
+                O CSS é escrito dentro da tag <code>&lt;style&gt;</code> no <code>&lt;head&gt;</code> do documento HTML.<br>
+                <b>Vantagem:</b> Útil para estilos específicos de uma única página.<br>
+                <b>Exemplo no HTML:</b><br>
+                <pre><code>                
+                    <head>
+                        <style>
+                            body { background-color: lightgray; }
+                        </style>
+                    </head>
+                </code></pre> 
+                <br><br>
+                <b>CSS Inline:</b>
+                <br><br>
+                O CSS é aplicado diretamente a um elemento HTML usando o atributo style.<br>
+                <b>Vantagem:</b> Para estilos muito pontuais e específicos de um único elemento.<br>
+                <b>Desvantagem:</b> Dificulta a manutenção e não é recomendado para estilos complexos ou reutilizáveis.<br>
+                <b>Exemplo no HTML:</b> <pre><code><p style="color: red; font-weight: bold;">Este texto é vermelho e negrito.</p></code></pre>
+            </p>
             <h2>HTML, CSS e JavaScript: A Tríade da Web</h2>
             <p>É importante lembrar que o HTML raramente trabalha sozinho:</p>
             <ul>
