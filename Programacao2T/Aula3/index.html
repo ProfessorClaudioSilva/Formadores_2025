@@ -29,7 +29,79 @@
             </ul>        
             
             <h2>CSS</h2>
-            <p><span class="texto-inglês">Cascading Style Sheets</span> (em português, Folhas de Estilo em Cascata), cria estilos padronizados na sua página web.</p>
+            <p><span class="texto-inglês">Cascading Style Sheets</span> (em português, Folhas de Estilo em Cascata). Ele é a linguagem que usamos para estilizar documentos escritos em HTML. 
+                Enquanto o HTML define a estrutura e o conteúdo de uma página web (o esqueleto), o CSS é responsável por toda a aparência e pelo layout (a pele, as roupas, a maquiagem, a posição dos elementos).
+                <br>
+                Pense no CSS como o designer de moda da web. Ele decide:</p>
+                <ul>
+                    <li>Cores: Quais cores usar para textos, fundos, botões.</li>
+                    <li>Fontes: Qual tipo de letra, tamanho e peso (negrito, itálico).</li>
+                    <li>Layout: Onde os elementos devem aparecer na página (lado a lado, um embaixo do outro, centralizados).</li>
+                    <li>Espaçamento: Quanta margem e preenchimento (padding) deve haver entre os elementos.</li>
+                    <li>Tamanhos: O tamanho de caixas, imagens, etc.</li>
+                    <li>Animações e Transições: Como os elementos se movem ou mudam de estado.</li>
+                    <li>Responsividade: Como a página se adapta a diferentes tamanhos de tela (celulares, tablets, desktops).</li>
+                </ul>
+                    
+                <h3>Como o CSS Funciona?</h3>
+                <p>O CSS funciona através de regras de estilo. Cada regra consiste em:</p>
+                <ul>
+                    <li>Seletor: O que você quer estilizar (ex: um parágrafo, um título, um elemento com uma ID específica).</li>
+                    <li>Declaração: Como você quer estilizar isso, dentro de chaves {}. Uma declaração tem uma propriedade (o que você quer mudar, ex: color) e um valor (como você quer mudar, ex: blue).</li>
+                </ul>
+                <p>Exemplo Básico:</p>
+                
+                <code>
+                /* Este é um comentário em CSS */
+                
+                /* Seletor: P (todos os parágrafos) */
+                p {
+                    /* Declarações: */
+                    color: #333;        /* Define a cor do texto para um cinza escuro */
+                    font-size: 16px;    /* Define o tamanho da fonte para 16 pixels */
+                    line-height: 1.5;   /* Define o espaçamento entre as linhas */
+                }
+                
+                /* Seletor: .minha-classe (elementos com a classe "minha-classe") */
+                .minha-classe {
+                    background-color: lightblue; /* Define a cor de fundo como azul claro */
+                    padding: 10px;               /* Adiciona 10 pixels de preenchimento interno */
+                    border-radius: 5px;          /* Arredonda os cantos em 5 pixels */
+                }
+                
+                /* Seletor: #meu-id (elemento com a ID "meu-id") */
+                #meu-id {
+                    text-align: center; /* Centraliza o texto */
+                    margin-top: 20px;   /* Adiciona 20 pixels de margem superior */
+                }
+                </code>
+                    
+                Onde o CSS é Escrito?
+                Existem três formas principais de incluir CSS em uma página web:
+                
+                CSS Externo (Recomendado):
+                
+                O CSS é escrito em um arquivo separado (.css) e linkado ao HTML usando a tag <link> no <head>.
+                Vantagem: Organiza o código, facilita a manutenção e o reuso de estilos em múltiplas páginas.
+                Exemplo no HTML: <link rel="stylesheet" href="style.css">
+                CSS Interno:
+                
+                O CSS é escrito dentro da tag <style> no <head> do documento HTML.
+                Vantagem: Útil para estilos específicos de uma única página.
+                Exemplo no HTML:
+                HTML
+                
+                <head>
+                    <style>
+                        body { background-color: lightgray; }
+                    </style>
+                </head>
+                CSS Inline:
+                
+                O CSS é aplicado diretamente a um elemento HTML usando o atributo style.
+                Vantagem: Para estilos muito pontuais e específicos de um único elemento.
+                Desvantagem: Dificulta a manutenção e não é recomendado para estilos complexos ou reutilizáveis.
+                Exemplo no HTML: <p style="color: red; font-weight: bold;">Este texto é vermelho e negrito.</p></p>
 
             <h2>HTML, CSS e JavaScript: A Tríade da Web</h2>
             <p>É importante lembrar que o HTML raramente trabalha sozinho:</p>
