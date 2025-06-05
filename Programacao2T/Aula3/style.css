@@ -2,7 +2,7 @@ body{
     background-color: darkslategray;
     color: white;
     text-align: center;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Heveltic, San-serif;
 }
 
 p{
@@ -21,6 +21,10 @@ header{
     text-align: justify;
     width: 60%;
     margin: 0 auto;
+}
+
+code{
+    font-weight: bold;
 }
 
 footer{
