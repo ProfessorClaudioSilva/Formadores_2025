@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Hello World!!!</title>
 </head>
+
 <body>
     <header>
         <h1>Hello World!!!</h1>
         <p>Que bom te ver por aqui, <span id="nome-usuário">Fulano</span></p>
     </header>
-    <img src="imagem/olaMundo.png" alt="Imagem com figuras geométricas ao fundo e uma figura do planeta Terra a frente, com inscrição Olá Mundo em letras coloridas.">
+    <img src="imagem/olaMundo.png"
+        alt="Imagem com figuras geométricas ao fundo e uma figura do planeta Terra a frente, com inscrição Olá Mundo em letras coloridas.">
     <div class="container">
         <section>
             <h2>HTML</h2>
-            <p>O termo "HTML" se refere à <b>Linguagem de Marcação de Hipertexto</b> (do inglês, <span class="texto-inglês">HyperText Markup Language</span>).
+            <p>O termo "HTML" se refere à <b>Linguagem de Marcação de Hipertexto</b> (do inglês, <span
+                    class="texto-inglês">HyperText Markup Language</span>).
                 Ele é a base da estrutura de qualquer página web que você acessa na internet.</p>
-            <p>Em termos simples, o HTML é usado para estruturar o conteúdo de uma página. Pense nele como o esqueleto de um corpo humano: ele define onde fica a cabeça, 
-                os braços, as pernas, mas não se preocupa com a cor da pele ou o tipo de roupa. Essas características visuais são trabalho do CSS.</p>
-    
+            <p>Em termos simples, o HTML é usado para estruturar o conteúdo de uma página. Pense nele como o esqueleto
+                de um corpo humano: ele define onde fica a cabeça,
+                os braços, as pernas, mas não se preocupa com a cor da pele ou o tipo de roupa. Essas características
+                visuais são trabalho do CSS.</p>
+
             <h3>O que o HTML faz?</h3>
             <ul>
-                <li>Define Títulos e Parágrafos: Você usa tags HTML para indicar que uma parte do texto é um título (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.) ou um parágrafo (<code>&lt;p&gt;</code>).</li>
-                <li>Insere Imagens e Vídeos: Com o HTML, você especifica onde uma imagem (<code>&lt;img&gt;</code>) ou um vídeo (<code>&lt;video&gt;</code>) deve aparecer na página.</li>
-                <li>Cria Links: O HTML é fundamental para criar os links (<code>&lt;a&gt;</code>) que conectam diferentes páginas na web. É por isso que é chamado de "hipertexto" – ele permite navegar entre documentos.</li>
-                <li>Organiza Listas e Tabelas: Ele permite estruturar informações em listas (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>) ou tabelas (<code>&lt;table&gt;</code>).</li>
-                <li>Cria Formulários: Para interagir com o usuário, como em formulários de contato ou login, o HTML fornece os elementos (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>) necessários.</li>
-            </ul>        
-            
+                <li>Define Títulos e Parágrafos: Você usa tags HTML para indicar que uma parte do texto é um título
+                    (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.) ou um parágrafo (<code>&lt;p&gt;</code>).
+                </li>
+                <li>Insere Imagens e Vídeos: Com o HTML, você especifica onde uma imagem (<code>&lt;img&gt;</code>) ou
+                    um vídeo (<code>&lt;video&gt;</code>) deve aparecer na página.</li>
+                <li>Cria Links: O HTML é fundamental para criar os links (<code>&lt;a&gt;</code>) que conectam
+                    diferentes páginas na web. É por isso que é chamado de "hipertexto" – ele permite navegar entre
+                    documentos.</li>
+                <li>Organiza Listas e Tabelas: Ele permite estruturar informações em listas (<code>&lt;ul&gt;</code>,
+                    <code>&lt;ol&gt;</code>) ou tabelas (<code>&lt;table&gt;</code>).</li>
+                <li>Cria Formulários: Para interagir com o usuário, como em formulários de contato ou login, o HTML
+                    fornece os elementos (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>,
+                    <code>&lt;button&gt;</code>) necessários.</li>
+            </ul>
+
             <h2>CSS</h2>
-            <p><span class="texto-inglês">Cascading Style Sheets</span> (em português, Folhas de Estilo em Cascata). Ele é a linguagem que usamos para estilizar documentos escritos em HTML. 
-                Enquanto o HTML define a estrutura e o conteúdo de uma página web (o esqueleto), o CSS é responsável por toda a aparência e pelo layout (a pele, as roupas, a maquiagem, a posição dos elementos).
+            <p><span class="texto-inglês">Cascading Style Sheets</span> (em português, Folhas de Estilo em Cascata). Ele
+                é a linguagem que usamos para estilizar documentos escritos em HTML.
+                Enquanto o HTML define a estrutura e o conteúdo de uma página web (o esqueleto), o CSS é responsável por
+                toda a aparência e pelo layout (a pele, as roupas, a maquiagem, a posição dos elementos).
                 <br>
-                Pense no CSS como o designer de moda da web. Ele decide:</p>
-                <ul>
-                    <li>Cores: Quais cores usar para textos, fundos, botões.</li>
-                    <li>Fontes: Qual tipo de letra, tamanho e peso (negrito, itálico).</li>
-                    <li>Layout: Onde os elementos devem aparecer na página (lado a lado, um embaixo do outro, centralizados).</li>
-                    <li>Espaçamento: Quanta margem e preenchimento (padding) deve haver entre os elementos.</li>
-                    <li>Tamanhos: O tamanho de caixas, imagens, etc.</li>
-                    <li>Animações e Transições: Como os elementos se movem ou mudam de estado.</li>
-                    <li>Responsividade: Como a página se adapta a diferentes tamanhos de tela (celulares, tablets, desktops).</li>
-                </ul>
-                    
-                <h3>Como o CSS Funciona?</h3>
-                <p>O CSS funciona através de regras de estilo. Cada regra consiste em:</p>
-                <ul>
-                    <li>Seletor: O que você quer estilizar (ex: um parágrafo, um título, um elemento com uma ID específica).</li>
-                    <li>Declaração: Como você quer estilizar isso, dentro de chaves { }. Uma declaração tem uma propriedade (o que você quer mudar, ex: color) e um valor (como você quer mudar, ex: blue).</li>
-                </ul>
-                <p>Exemplo Básico:</p>
-                
-                <pre><code>
+                Pense no CSS como o designer de moda da web. Ele decide:
+            </p>
+            <ul>
+                <li>Cores: Quais cores usar para textos, fundos, botões.</li>
+                <li>Fontes: Qual tipo de letra, tamanho e peso (negrito, itálico).</li>
+                <li>Layout: Onde os elementos devem aparecer na página (lado a lado, um embaixo do outro,
+                    centralizados).</li>
+                <li>Espaçamento: Quanta margem e preenchimento (padding) deve haver entre os elementos.</li>
+                <li>Tamanhos: O tamanho de caixas, imagens, etc.</li>
+                <li>Animações e Transições: Como os elementos se movem ou mudam de estado.</li>
+                <li>Responsividade: Como a página se adapta a diferentes tamanhos de tela (celulares, tablets,
+                    desktops).</li>
+            </ul>
+
+            <h3>Como o CSS Funciona?</h3>
+            <p>O CSS funciona através de regras de estilo. Cada regra consiste em:</p>
+            <ul>
+                <li>Seletor: O que você quer estilizar (ex: um parágrafo, um título, um elemento com uma ID específica).
+                </li>
+                <li>Declaração: Como você quer estilizar isso, dentro de chaves { }. Uma declaração tem uma propriedade
+                    (o que você quer mudar, ex: color) e um valor (como você quer mudar, ex: blue).</li>
+            </ul>
+            <p>Exemplo Básico:</p>
+
+            <pre><code>
                 /* Este é um comentário em CSS */
                 
                 /* Seletor: P (todos os parágrafos) */
@@ -76,35 +97,38 @@
                     margin-top: 20px;   /* Adiciona 20 pixels de margem superior */
                 }
                 </code></pre>
-                    
-                <h3>Onde o CSS é Escrito?</h3>
-                <p>Existem três formas principais de incluir CSS em uma página web:
+
+            <h3>Onde o CSS é Escrito?</h3>
+            <p>Existem três formas principais de incluir CSS em uma página web:
                 <br><br>
                 <b>CSS Externo (Recomendado):</b>
                 <br><br>
-                O CSS é escrito em um arquivo separado (.css) e linkado ao HTML usando a tag <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code>.<br>
+                O CSS é escrito em um arquivo separado (.css) e linkado ao HTML usando a tag <code>&lt;link&gt;</code>
+                no <code>&lt;head&gt;</code>.<br>
                 <b>Vantagem:</b> Organiza o código, facilita a manutenção e o reuso de estilos em múltiplas páginas.<br>
-                <b>Exemplo no HTML:</b> <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
-                <br><br>
-                <b>CSS Interno:</b>
-                <br><br>
-                O CSS é escrito dentro da tag <code>&lt;style&gt;</code> no <code>&lt;head&gt;</code> do documento HTML.<br>
-                <b>Vantagem:</b> Útil para estilos específicos de uma única página.<br>
-                <b>Exemplo no HTML:</b><br>
-                <pre><code>                
+                <b>Exemplo no HTML:</b>
+            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+            <br><br>
+            <b>CSS Interno:</b>
+            <br><br>
+            O CSS é escrito dentro da tag <code>&lt;style&gt;</code> no <code>&lt;head&gt;</code> do documento HTML.<br>
+            <b>Vantagem:</b> Útil para estilos específicos de uma única página.<br>
+            <b>Exemplo no HTML:</b><br>
+            <pre><code>                
                     &lt;head&gt;
                         &lt;style&gt;
                             body { background-color: lightgray; }
                         &lt;/style&gt;
                     &lt;/head&gt;
-                </code></pre> 
-                <br><br>
-                <b>CSS Inline:</b>
-                <br><br>
-                O CSS é aplicado diretamente a um elemento HTML usando o atributo style.<br>
-                <b>Vantagem:</b> Para estilos muito pontuais e específicos de um único elemento.<br>
-                <b>Desvantagem:</b> Dificulta a manutenção e não é recomendado para estilos complexos ou reutilizáveis.<br>
-                <b>Exemplo no HTML:</b> <pre><code>&lt;p style="color: red; font-weight: bold;"&gt;Este texto é vermelho e negrito.&lt;/p&gt;</code></pre>
+                </code></pre>
+            <br><br>
+            <b>CSS Inline:</b>
+            <br><br>
+            O CSS é aplicado diretamente a um elemento HTML usando o atributo style.<br>
+            <b>Vantagem:</b> Para estilos muito pontuais e específicos de um único elemento.<br>
+            <b>Desvantagem:</b> Dificulta a manutenção e não é recomendado para estilos complexos ou reutilizáveis.<br>
+            <b>Exemplo no HTML:</b>
+            <pre><code>&lt;p style="color: red; font-weight: bold;"&gt;Este texto é vermelho e negrito.&lt;/p&gt;</code></pre>
             </p>
             <br>
             <h2>HTML, CSS e JavaScript: A Tríade da Web</h2>
@@ -112,16 +136,19 @@
             <ul>
                 <li>HTML: Cuida da estrutura e do conteúdo.</li>
                 <li>CSS: Cuida da estilização e do layout (cores, fontes, espaçamentos, etc.).</li>
-                <li>JavaScript: Cuida da interatividade e do comportamento dinâmico da página (animações, validação de formulários, etc.).</li>
+                <li>JavaScript: Cuida da interatividade e do comportamento dinâmico da página (animações, validação de
+                    formulários, etc.).</li>
             </ul>
-            <p>Eles se complementam para criar as páginas web ricas e dinâmicas que usamos todos os dias. Se o HTML é o esqueleto, o CSS é a pele e as roupas, e o JavaScript é o sistema nervoso que dá vida e movimento.</p>
+            <p>Eles se complementam para criar as páginas web ricas e dinâmicas que usamos todos os dias. Se o HTML é o
+                esqueleto, o CSS é a pele e as roupas, e o JavaScript é o sistema nervoso que dá vida e movimento.</p>
         </section>
     </div>
-    
+
     <footer>
         <p>Uma página desenvolvida por Alura Start.</p>
         <p>&copy;2025 - Professor Claduio R. Silva.</p>
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
