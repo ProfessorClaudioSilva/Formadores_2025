@@ -3,3 +3,5 @@ function inserirNome(){
     let elemeto = document.querySelector("#nome-usuario");
     elementoSaudações.textContent = nomeUsuario;
 }
+
+inserirNome();
